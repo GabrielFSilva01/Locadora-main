@@ -63,6 +63,10 @@ $clientes = $dalCliente->Select();
                            onclick="location.href='FormClienteEdit.php?id=<?= $cliente->getId(); ?>'">
                             edit
                         </i>
+                        <i class="material-icons grey-text text-darken-2" style="cursor:pointer;"
+                           onclick="location.href='DetailCliente.php?id=<?= $cliente->getId(); ?>'">
+                            details
+                        </i>
                     </td>
                 </tr>
             <?php } ?>

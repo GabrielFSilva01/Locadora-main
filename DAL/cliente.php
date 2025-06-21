@@ -81,5 +81,12 @@ public function insert(\MODEL\Cliente $cliente) {
     Conexao::desconectar();
 }
 
-    public function delete() {}
+    public function Delete(int $id) {
+    $sql = "DELETE FROM cliente WHERE id = ?";
+    $con = Conexao::conectar();
+    $query = $con->prepare($sql);
+    $result=$query->execute([$id]);
+    Conexao::desconectar();
+    return $result;
+    }
 }
