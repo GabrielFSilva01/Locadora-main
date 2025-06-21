@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/../../DAL/Cliente.php';
 require_once __DIR__ . '/../../MODEL/Cliente.php';
+require_once __DIR__.'/../../VIEW/menu.php';
 $id = $_GET['id'];
 //echo"id" . $id;
 $dalCliente = new DAL\Cliente();

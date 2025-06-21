@@ -4,6 +4,7 @@ namespace VIEW\Cliente;
 
 require_once __DIR__ . '/../../DAL/Cliente.php';
 require_once __DIR__ . '/../../MODEL/Cliente.php';
+require_once __DIR__.'/../../VIEW/menu.php';
 
 use DAL\Cliente;
 
@@ -45,7 +46,7 @@ $clientes = $dalCliente->Select();
                 <th>
                     Ações
                     <a class="waves-effect waves-light btn-small" href="FormCliente.php" style="margin-left:10px;">
-                        Operações
+                        cadastro
                     </a>
                 </th>
             </tr>

@@ -1,6 +1,8 @@
 <?php
 require_once __DIR__ . '/../../DAL/Cliente.php';
 require_once __DIR__ . '/../../MODEL/Cliente.php';
+require_once __DIR__.'/../../VIEW/menu.php';
+use VIEW\Filme\Menu;
 
 $id = $_GET['id'] ?? null;
 
