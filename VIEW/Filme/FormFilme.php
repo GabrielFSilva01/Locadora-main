@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <title>Cadastrar Filme</title>
@@ -8,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
+
 <body>
   <div class="container">
     <div class="row center-align">
@@ -34,6 +36,10 @@
         <input type="text" name="status" id="status" required />
         <label for="status">Status</label>
       </div>
+      <div class="right-align">
+        <button type="submit" class="btn green">Gravar</button>
+        <a href="LstFilmes.php" class="btn red">Voltar</a>
+      </div>
 
       <div class="row center-align">
         <button type="submit" class="btn green darken-2 waves-effect waves-light">
@@ -49,9 +55,10 @@
   <!-- Materialize JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
       M.updateTextFields();
     });
   </script>
 </body>
+
 </html>

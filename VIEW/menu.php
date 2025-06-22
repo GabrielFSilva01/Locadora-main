@@ -55,7 +55,7 @@ if (!isset($_SESSION['usuario'])) {
         <li><a href="<?= $baseUrl ?>/Cliente/Lstcliente.php"><i class="material-icons left">person</i>Clientes</a></li>
         <li><a href="<?= $baseUrl ?>/Filme/LstFilme.php"><i class="material-icons left">movie</i>Filmes</a></li>
         <li><a href="<?= $baseUrl ?>/Auth/logout.php"><i class="material-icons left">exit_to_app</i>Sair</a></li>
-        <li><a href="<?= $baseUrl ?>/Locacao/Lstlocacao.php"><i class="material-icons left">assignment</i>alugueis</a></li>
+        <li><a href="<?= $baseUrl ?>/aluguel/LstAluguel.php"><i class="material-icons left">assignment</i>alugueis</a></li>
       </ul>
     </div>
   </nav>
@@ -73,7 +73,7 @@ if (!isset($_SESSION['usuario'])) {
     <li><a href="<?= $baseUrl ?>/Filme/home.php"><i class="material-icons">home</i>Home</a></li>
     <li><a href="<?= $baseUrl ?>/Cliente/Lstcliente.php"><i class="material-icons">person</i>Clientes</a></li>
     <li><a href="<?= $baseUrl ?>/Filme/LstFilme.php"><i class="material-icons">movie</i>Filmes</a></li>
-    <li><a href="<?= $baseUrl ?>/Locacao/Lstlocacao.php"><i class="material-icons">assignment</i>Locações</a></li>
+    <li><a href="<?= $baseUrl ?>/alugueis/LstAluguel.php"><i class="material-icons">assignment</i>Locações</a></li>
   </ul>
 
   <!-- Scripts -->
