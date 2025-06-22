@@ -10,7 +10,7 @@ class Filme {
 
     public function __construct()
     {
-        // Construtor vazio, pode ser preenchido conforme necessidade
+       
     }
 
     public function getId(): ?int

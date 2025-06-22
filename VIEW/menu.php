@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['usuario'])) {
+    header("Location: index.php");
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -45,7 +54,8 @@
         <li><a href="<?= $baseUrl ?>/Filme/home.php"><i class="material-icons left">home</i>Home</a></li>
         <li><a href="<?= $baseUrl ?>/Cliente/Lstcliente.php"><i class="material-icons left">person</i>Clientes</a></li>
         <li><a href="<?= $baseUrl ?>/Filme/LstFilme.php"><i class="material-icons left">movie</i>Filmes</a></li>
-        <li><a href="<?= $baseUrl ?>/Locacao/Lstlocacao.php"><i class="material-icons left">assignment</i>Locações</a></li>
+        <li><a href="<?= $baseUrl ?>/Auth/logout.php"><i class="material-icons left">exit_to_app</i>Sair</a></li>
+        <li><a href="<?= $baseUrl ?>/Locacao/Lstlocacao.php"><i class="material-icons left">assignment</i>alugueis</a></li>
       </ul>
     </div>
   </nav>
